@@ -1,0 +1,139 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-style:oblique;
+}
+
+h1{
+    text-align:left;
+    display: inline;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+#buttons{
+    display:inline-block;
+    margin-left: 25rem ;
+    margin-bottom: 0%;
+    margin-top:2.5rem;
+    position: absolute;
+}
+#buttons>a{
+    
+    color: white;
+    background-color: rgb(44, 110, 136);
+    border-radius:0%;
+    border: 1px solid black;
+    display: inline;
+    align-content: end;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px 2px #000000b6;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    align-content: right;
+    margin-left: 0.5rem;
+}
+
+
+#buttons>a:hover,#buttons>a:active,#buttons>a[href="#"]{
+    background-color: rgb(63, 119, 46);
+    color: white;
+    border-radius:0%;
+    border: 2px solid black;
+    display: inline;
+    
+    text-decoration: none;
+    align-content: right;
+}
+
+
+#banner{
+    height: 40vh;
+    width: 95vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    display: block;
+    image-rendering: auto;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border:2px solid black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 95vw;
+    
+}
+
+aside{
+    display: inline-block;
+    position: static;
+    bottom: 300px;
+    margin: 2rem;
+}
+aside>img{
+    height: 300px;
+    width: 300px;
+    display: block;
+    padding: 0.5rem;
+    align-items: left
+}
+
+div{
+    
+    display: inline-block;
+    position: relative;
+    
+    width: 50%;
+    margin: 2rem;
+                
+    
+    
+}
+
+article{
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.contacto{
+    bottom: 500px;
+}
+
+.about{
+    bottom: 300px;
+}
+
+.home{
+    bottom: 450px;
+}
+
+
+#email{
+    
+    border: 0px;
+    color: hwb(249 10% 41%);
+    padding: 0.5rem;
+    
+    display: inline;
+    
+}
+
+
