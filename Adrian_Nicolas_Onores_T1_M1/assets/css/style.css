@@ -3,137 +3,271 @@
     margin: 0%;
     box-sizing: border-box;
     font-style:oblique;
+    font-family: 'Roboto', sans-serif;
 }
+header{
+    background-color: darkslategray;
+    gap:.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    border: #000 solid 2px;
+}
+#banner{
+    height: 40vh;
+    width: 90vw;
+    border: solid 5px #000;
+    display: flex;
+    gap:0.5em;
+    object-fit: cover;
 
+}
 h1{
-    text-align:left;
-    display: inline;
-    margin-top: 2rem;
-    padding-left: 2rem;
+    
+    display: flex;
+    text-align: center; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    align-content: flex-end;
+    
+    color: #fff; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    
+    
+}
+h2{
+
+    border:2px solid rgb(0, 0, 0);
+    gap:.5em;
+    padding: .5rem;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    background-color: #4b849b;
+    
 }
 
+h3{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
 #buttons{
-    display:inline-block;
-    margin-left: 25rem ;
-    margin-bottom: 0%;
-    margin-top:2.5rem;
-    position: absolute;
+    display:flex;
+    gap:.5em;
+    justify-content: center;
+    margin-top: 1rem;
 }
 #buttons>a{
     
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(44, 110, 136);
     border-radius:0%;
     border: 1px solid black;
-    display: inline;
-    align-content: end;
+    display: flex;
+    
     text-decoration: none;
     box-shadow: 2px 2px 2px 2px #000000b6;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top:0.5rem;
     padding-bottom:0.5rem;
-    align-content: right;
+    align-content: end;
     margin-left: 0.5rem;
 }
-
-
 #buttons>a:hover,#buttons>a:active,#buttons>a[href="#"]{
     background-color: rgb(63, 119, 46);
     color: white;
     border-radius:0%;
     border: 2px solid black;
     display: inline;
-    
     text-decoration: none;
     align-content: right;
 }
-
-
-#banner{
-    height: 40vh;
-    width: 95vw;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    display: block;
-    image-rendering: auto;
-}
-
 body{
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
-
-h2{
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border:2px solid black;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    width: 95vw;
+main{
     
-}
-
-aside{
-    display: inline-block;
-    position: static;
-    bottom: 300px;
-    margin: 2rem;
-}
-aside>img{
-    height: 300px;
-    width: 300px;
-    display: block;
+    
     padding: 0.5rem;
-    align-items: left
+    
+    background-color: rgba(13, 70, 21, 0.863);
+    border: #000 solid 2px;
 }
+.imagen{
+    max-width: 33%;
+    opacity: 0.75;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    z-index: 0 ;
+    object-fit: cover;
+}
+.container{
 
-div{
-    
-    display: inline-block;
-    position: relative;
-    
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: flex-start;
+    border: #000000 solid 2px;
+    background-color: gray;
+    border-radius: 5%;
+  
+
+}
+.articulos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 50%;
-    margin: 2rem;
-                
-    
-    
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+    gap: 1rem; 
 }
-
 article{
-    display: block;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-align: left;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1%;
+    flex-grow: 1; 
 }
-
-.contacto{
-    bottom: 500px;
-}
-
-.about{
-    bottom: 300px;
-}
-
-.home{
-    bottom: 450px;
-}
-
 
 #email{
-    
-    border: 0px;
     color: hwb(249 10% 41%);
     padding: 0.5rem;
-    
     display: inline;
+}
+li{
+    list-style-position: inside;
+}
+.Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.Gallery>img{
+    width: 33%;
+    padding: 1%;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+dt{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+}
+.reglas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    width: 66%;
+    text-align: justify;
+}
+
+ol{
+    list-style-type: decimal;
+    text-align: justify;
+    padding: .5rem;
+    
+}
+.decimal .alfabetica{
+    list-style-type: lower-alpha;
+    padding: .5rem;
+    font-weight: normal;
+}
+
+.decimal p{
+    font-weight: normal;
+}
+
+ul{
+    list-style-type: circle;
+    text-align: justify;
+    padding: .5rem;
+}
+
+.decimal>li{
+    font-weight: bold;
+}
+
+.subtitle{
+
+justify-content: center;
+align-items: center;
+padding: .3rem;
+margin: .5rem;
+display: flex;
+height: 3rem;
+width: 100%;
+
+}
+
+th, td{
+    padding: .5rem;
+}
+table{
+    table-layout: auto;
+    border-collapse: separate;
+}
+caption{
+    caption-side: bottom;
+    text-align: right;
+    font-size: 15px;
+    padding: .3rem;
+}
+
+#tablas>div{
+    background-color: #f5f5f5ab;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
     
 }
 
+#tablas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    background-color: grey;
+}
 
+footer{
+    display:block;
+    border: #000000 solid 2px;
+    padding: .5rem;
+    background-color: #4b849b;
+    
+}
+footer>p{
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+}
