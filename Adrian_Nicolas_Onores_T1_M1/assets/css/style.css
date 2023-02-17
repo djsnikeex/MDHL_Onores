@@ -1,3 +1,4 @@
+/*Estructura*/
 *{
     padding: 0%;
     margin: 0%;
@@ -16,31 +17,49 @@ header{
     padding: 1.5rem;
     border: #000 solid 2px;
 }
+body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    padding: 0.5rem;
+    background-color: rgba(13, 70, 21, 0.863);
+    border: #000 solid 2px;
+}
+footer{
+    display:block;
+    border: #000000 solid 2px;
+    padding: .5rem;
+    background-color: #4b849b;
+    
+}
+footer>p{
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
 #banner{
     height: 40vh;
     width: 90vw;
     border: solid 5px #000;
     display: flex;
+    border-radius:15px;
     gap:0.5em;
     object-fit: cover;
-
+    object-position: 50% 35%;
 }
-h1{
-    
+/*Estilos textos*/
+h1{ 
     display: flex;
     text-align: center; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif Black; 
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", "serif Black"; 
     font-weight: bold; 
     font-size: 30px; 
     align-content: flex-end;
-    
     color: #fff; 
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-    
-    
 }
 h2{
-
     border:2px solid rgb(0, 0, 0);
     gap:.5em;
     padding: .5rem;
@@ -51,17 +70,21 @@ h2{
     flex-wrap: wrap;
     font-weight: bold;
     background-color: #4b849b;
-    
+    border-radius: 15px;
 }
-
 h3{
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
 p{
     color: rgb(0, 0, 0);
-    text-align: center;
 }
+#email{
+    color: hwb(249 10% 41%);
+    padding: 0.5rem;
+    display: inline;
+}
+/*Estilos de botones*/
 #buttons{
     display:flex;
     gap:.5em;
@@ -69,13 +92,11 @@ p{
     margin-top: 1rem;
 }
 #buttons>a{
-    
     color: rgb(255, 255, 255);
     background-color: rgb(44, 110, 136);
-    border-radius:0%;
+    border-radius:15px;
     border: 1px solid black;
     display: flex;
-    
     text-decoration: none;
     box-shadow: 2px 2px 2px 2px #000000b6;
     padding-left: 1rem;
@@ -88,24 +109,12 @@ p{
 #buttons>a:hover,#buttons>a:active,#buttons>a[href="#"]{
     background-color: rgb(63, 119, 46);
     color: white;
-    border-radius:0%;
+    border-radius:15px;
     border: 2px solid black;
     display: inline;
     text-decoration: none;
-    align-content: right;
 }
-body{
-    height: 100%;
-    width: 100%;
-}
-main{
-    
-    
-    padding: 0.5rem;
-    
-    background-color: rgba(13, 70, 21, 0.863);
-    border: #000 solid 2px;
-}
+/*Estilos de imagenes*/
 .imagen{
     max-width: 33%;
     opacity: 0.75;
@@ -116,8 +125,12 @@ main{
     z-index: 0 ;
     object-fit: cover;
 }
+.imagen:hover{
+    opacity: 1;
+    z-index: 1;
+}
+/*Estilo de container general*/
 .container{
-
     display:flex;
     flex-wrap: wrap;
     width: 100%;
@@ -125,10 +138,9 @@ main{
     justify-content: flex-start;
     border: #000000 solid 2px;
     background-color: gray;
-    border-radius: 5%;
-  
-
+    border-radius: 15px;
 }
+/*Estilos de secciones y Articulos*/
 .articulos{
     display: flex;
     flex-direction: column;
@@ -149,15 +161,7 @@ article{
     padding: 1%;
     flex-grow: 1; 
 }
-
-#email{
-    color: hwb(249 10% 41%);
-    padding: 0.5rem;
-    display: inline;
-}
-li{
-    list-style-position: inside;
-}
+/* Estilo de galeria*/
 .Gallery{
     display: flex;
     flex-wrap: wrap;
@@ -170,12 +174,7 @@ li{
     object-fit: cover;
     border-radius: 3rem;
 }
-
-dt{
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    
-}
+/*Estilo de listas*/
 .reglas{
     display: flex;
     flex-wrap: wrap;
@@ -184,35 +183,37 @@ dt{
     width: 66%;
     text-align: justify;
 }
-
+ul{
+    list-style-type: circle;
+    text-align: justify;
+    padding: .5rem;
+}
 ol{
     list-style-type: decimal;
     text-align: justify;
     padding: .5rem;
     
 }
+dt{
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+}
+li{
+    list-style-position: inside;
+}
 .decimal .alfabetica{
     list-style-type: lower-alpha;
     padding: .5rem;
     font-weight: normal;
 }
-
 .decimal p{
     font-weight: normal;
 }
-
-ul{
-    list-style-type: circle;
-    text-align: justify;
-    padding: .5rem;
-}
-
 .decimal>li{
     font-weight: bold;
 }
-
+/*Estilo de subtitulos interinos*/
 .subtitle{
-
 justify-content: center;
 align-items: center;
 padding: .3rem;
@@ -220,34 +221,8 @@ margin: .5rem;
 display: flex;
 height: 3rem;
 width: 100%;
-
 }
-
-th, td{
-    padding: .5rem;
-}
-table{
-    table-layout: auto;
-    border-collapse: separate;
-}
-caption{
-    caption-side: bottom;
-    text-align: right;
-    font-size: 15px;
-    padding: .3rem;
-}
-
-#tablas>div{
-    background-color: #f5f5f5ab;
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: .5rem;
-    
-}
-
+/*Estilo de Tablas*/
 #tablas{
     display: flex;
     flex-wrap: wrap;
@@ -259,15 +234,114 @@ caption{
     padding: 1rem;
     background-color: grey;
 }
-
-footer{
-    display:block;
-    border: #000000 solid 2px;
+#tablas>div{
+    background-color: #f5f5f5ab;
     padding: .5rem;
-    background-color: #4b849b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
     
 }
-footer>p{
+table{
+    table-layout: auto;
+    border-collapse: separate;
+}
+th, td{
+    padding: .5rem;
+}
+caption{
+    caption-side: bottom;
+    text-align: right;
+    font-size: 15px;
+    padding: .3rem;
+}
+/*Estilos de Mapas*/
+#ubicaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;
+}
+.ubicacion{
+    display: block;
+    flex-wrap: wrap;  
+    padding: .5rem;
+    background-color: rgb(20, 116, 100);
+    text-align: center;
+    justify-content: center;
+    gap: .5rem;
+    border: #000 solid 2px;
+    border-radius: 15px;
+    
+}
+iframe{
+    border-radius: 15px;
+}
+/*Estilos de formularios*/
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    width: 63%;
+    padding: .5rem;
+    background-color: grey;
+    text-align: center;
+    
+}
+.formulario>form>label{
+    display: inline-block;
+    padding: 0.5rem;
+    
+    background-color: brown;
+    border: #000000 solid 1.5px;
+     border-radius: 20px;
+    text-align: center;
+}
+.formulario>form>input{
+    display: block;
+    padding: 0.7rem;
+    width: 100%;
+    background-color: green;
+    border: #000000 solid 1.5px;
+    border-radius: 20px;
     font-weight: bold;
-    font-family: 'Rock Salt', cursive;
+    font-size: 1.2rem;
+}
+fieldset{
+    padding: .5rem;
+    border: #000000 solid 1.5px;
+    margin: .5rem;
+    background-color: brown;
+    border-radius: 20px;
+    text-align: center;
+}
+fieldset>fieldset{
+    border: none;
+    display: inline-block;
+    width: 50%;
+    padding: .6rem;
+}
+fieldset>fieldset>legend{
+    border:none;
+    background: none;
+    color: black;
+}
+legend{
+    font-weight: bold;
+    text-align: center;
+    padding: .5rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: #000000 solid 1.5px;
+    border-radius: 20px;
+}
+label{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: brown;
+    border: #000000 solid 1.5px;
+    border-radius: 20px;
+    text-align: center;
 }
